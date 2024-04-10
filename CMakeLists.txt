@@ -5,7 +5,7 @@ project(ParallelComputingHomework)
 set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fopenmp")
 
-add_executable(a.out main.cpp FirstTask/FirstTask.cpp SecondTask/SecondTask.cpp ThirdTask/ThirdTask.cpp)
+add_executable(a.out main.cpp FirstTask/FirstTask.cpp SecondTask/SecondTask.cpp ThirdTask/ThirdTask.cpp FourthTask/FourthTask.cpp)
 
 if(OpenMP_CXX_FOUND)
     target_compile_options(ThirdTask/ThirdTask.cpp PRIVATE -fopenmp)
